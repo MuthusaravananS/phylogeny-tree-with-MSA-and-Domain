@@ -42,6 +42,25 @@ create .pfam using pfam_scan-1.6-4 using attached pfam_scan.pl script as follows
 save all files in same folder with main python script and in terminal excute the file as follows,
 ```
 python Phylotree-v1.py -m candidate.aln -t candidate.nwk -d clear_candidate.pfam -s 0.8
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+main arguments:
+  -m MSA, --msa MSA     Path to an untrimmed multiple sequence alignment in
+                        FASTA format (the one produced by calcTree usually
+                        ends with "_aln.fa")
+  -t TREE, --tree TREE  Path to a gene tree, i.e. the best-scoring gene tree
+                        with bootstrap values (not as branch labels) produced
+                        by RAxML, usually the file name starts with
+                        "RAxML_bipartitions."
+  -d DOMAIN_ANNOTATIONS [DOMAIN_ANNOTATIONS ...], --domain_annotations DOMAIN_ANNOTATIONS [DOMAIN_ANNOTATIONS ...]
+                        Path(s) to one or more Pfam_scan domain annotation(s)
+                        of the proteins (standard method to display protein
+                        domains)
+  -s SCALE_FACTOR, --scale_factor SCALE_FACTOR
+                        Horizontal scaling factor of the MSA (default: 1.0).
+                        Decrease this value if your image is too wide!
 ```
 
 # To install dependencies 
