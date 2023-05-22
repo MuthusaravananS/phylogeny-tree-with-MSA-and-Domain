@@ -32,7 +32,7 @@ MUSCLE will generate the aligned sequences and save them in the aligned_sequence
 
 Download and install pfam_scan-1.6-4 from the Pfam website (https://pfam.xfam.org/tools).
 
-### Download ega software
+### Download Mega software
 official site for download, 
  https://www.megasoftware.net
  
