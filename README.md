@@ -3,6 +3,36 @@
 ## steps to create phylogenytree with domain informationa and MSA 
 
 The script will generate and display the phylogeny tree, with MSA and domain distribution labels assigned to the tree leaves.
+
+user can visualize the following files in a single figure:
+
+    a multiple sequence alignment (MSA)
+    a gene/protein tree in newick format
+    a protein domain annotation in Pfam_scan output format
+
+The inputs above can be combined freely, e.g. you may provide any combination such as
+
+    tree + MSA + domains
+    tree + MSA
+    tree + domains
+    MSA + domains or ... 
+    
+#Requirements
+
+ requires Python2.7 or Python3.4 or higher and the following Python packages:
+
+    ete3
+```
+pip install 'ete3==3.0.0b35'
+```
+    Biopython
+```
+pip install biopython
+```
+It is absolutely crucial that you're using ete3 version 3.0.0b35 and not the latest version.
+
+#Input files 
+
 Create .aln file using MUSCLE v3.8.1551 by Robert C. Edgar http://www.drive5.com/muscle
 Create .nwk file using any phylogeny tree methods or tools, we recommend Neighbour joining tree from Mega software, https://www.megasoftware.net
 create .pfam using pfam_scan-1.6-4 using attached pfam_scan.pl script as follows, 
@@ -11,7 +41,7 @@ create .pfam using pfam_scan-1.6-4 using attached pfam_scan.pl script as follows
 ```
 save all files in same folder with main python script and in terminal excute the file as follows,
 ```
-"python Phylotree-v1.py -m candidate.aln -t candidate.nwk -d clear_candidate.pfam -s 0.8"
+python Phylotree-v1.py -m candidate.aln -t candidate.nwk -d clear_candidate.pfam -s 0.8
 ```
 
 # To install dependencies 
