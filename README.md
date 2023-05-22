@@ -17,7 +17,7 @@ The inputs above can be combined freely, e.g. you may provide any combination su
     tree + domains
     MSA + domains or ... 
     
-#Requirements
+### Requirements
 
  requires Python2.7 or Python3.4 or higher and the following Python packages:
 
@@ -31,7 +31,7 @@ pip install biopython
 ```
 It is absolutely crucial that you're using ete3 version 3.0.0b35 and not the latest version.
 
-#Input files 
+### Input files 
 
 Create .aln file using MUSCLE v3.8.1551 by Robert C. Edgar http://www.drive5.com/muscle
 Create .nwk file using any phylogeny tree methods or tools, we recommend Neighbour joining tree from Mega software, https://www.megasoftware.net
